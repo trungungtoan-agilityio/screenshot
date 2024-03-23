@@ -163,6 +163,8 @@ class ScreenshotController {
       configuration: ViewConfiguration(
         logicalConstraints: BoxConstraints(
             maxWidth: logicalSize.width, maxHeight: logicalSize.height),
+        physicalConstraints: BoxConstraints(
+            maxWidth: logicalSize.width, maxHeight: logicalSize.height),
         devicePixelRatio: pixelRatio ?? 1.0,
       ),
     );
